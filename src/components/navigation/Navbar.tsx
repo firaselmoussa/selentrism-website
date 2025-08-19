@@ -6,9 +6,11 @@ const Navbar = () => {
     <nav className="fixed top-0 w-full z-50 glass border-b border-border/50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-primary rounded-lg glow flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-lg">GP</span>
-          </div>
+          <img 
+            src="/lovable-uploads/dc452938-0324-47e1-a9f0-d65c980cae25.png" 
+            alt="Global Presence Project Logo" 
+            className="w-8 h-8 object-contain"
+          />
           <span className="text-xl font-bold gradient-text">Global Presence</span>
         </Link>
         
