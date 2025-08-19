@@ -15,13 +15,12 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Automate Your
-            <span className="gradient-text"> Social Media Empire</span>
+            Revolutionize Your
+            <span className="gradient-text"> Digital Presence</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Generate revenue through AI-powered social media automation. 
-            Create workflows, manage ads, and scale your digital presence effortlessly.
+            A fully automated platform that empowers influencers, corporations, and individuals to streamline their social media management while unlocking new revenue opportunities through intelligent automation and engagement optimization.
           </p>
           
           <div className="flex flex-col md:flex-row gap-4 justify-center mb-12">

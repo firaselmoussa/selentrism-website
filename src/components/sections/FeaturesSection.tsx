@@ -13,43 +13,43 @@ import {
 const features = [
   {
     icon: Workflow,
-    title: "Drag & Drop Workflows",
-    description: "Create automated workflows with our intuitive visual editor. From content generation to posting - all automated."
+    title: "Workflow Automation",
+    description: "Build custom applications using drag-and-drop functionality. Create seamless automation chains like generate_content → post_on_instagram."
   },
   {
     icon: DollarSign,
-    title: "Monetize Your Accounts",
-    description: "Enable ad management and let other users post on your accounts. Generate passive income from your social media presence."
+    title: "Advertisement Management",
+    description: "Enable others to post ads on your accounts or select other users' accounts to promote your content. Full control with enable/disable options."
   },
   {
     icon: Users,
-    title: "Engagement Automation",
-    description: "Request authentic engagement from real users. Increase views, likes, and comments naturally."
+    title: "Engagement Optimization",
+    description: "Request engagement boosts for increased visibility or participate in others' campaigns for compensation, ensuring authentic interactions."
   },
   {
     icon: Calendar,
-    title: "Smart Scheduling",
-    description: "Schedule your campaigns and workflows to run automatically. Set it once, profit forever."
+    title: "Intelligent Scheduling",
+    description: "Schedule workflows to run automatically at defined intervals. Set up campaigns and let the system handle execution seamlessly."
   },
   {
     icon: TrendingUp,
-    title: "Analytics & Insights",
-    description: "Track performance metrics, campaign success rates, and revenue generation in real-time."
+    title: "Campaign Analytics",
+    description: "Comprehensive campaign management with metrics tracking, pause/resume functionality, and real-time performance insights."
   },
   {
     icon: Shield,
-    title: "Secure Wallet System",
-    description: "Built-in wallet for deposits, withdrawals, and automatic payment distribution."
+    title: "Integrated Wallet",
+    description: "Complete financial management with balance tracking, deposit/withdrawal capabilities, and transparent transaction history."
   },
   {
     icon: Zap,
-    title: "AI-Powered Content",
-    description: "Generate high-quality content automatically using advanced AI models tailored to your niche."
+    title: "AI-Generated Content",
+    description: "Advanced AI creates realistic comments and content, ensuring natural engagement patterns across all interactions."
   },
   {
     icon: Target,
-    title: "Multi-Platform Support",
-    description: "Manage Instagram, Twitter, TikTok, LinkedIn, and more from a single dashboard."
+    title: "Multi-Platform Integration",
+    description: "Connect and manage multiple social media accounts across various platforms from a unified dashboard interface."
   }
 ];
 
@@ -59,11 +59,11 @@ const FeaturesSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Powerful Features for
-            <span className="gradient-text"> Digital Domination</span>
+            Comprehensive Features for
+            <span className="gradient-text"> Social Media Excellence</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Everything you need to automate, monetize, and scale your social media presence
+            A unified solution combining automation, advertising management, and engagement optimization to simplify multi-platform social media management
           </p>
         </div>
         
