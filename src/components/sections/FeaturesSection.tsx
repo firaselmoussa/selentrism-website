@@ -53,39 +53,162 @@ const features = [
   }
 ];
 
+const roleFeatures = {
+  regular: [
+    {
+      icon: Workflow,
+      title: "Simple Automation",
+      description: "Create basic workflows to automate your posting schedule across platforms."
+    },
+    {
+      icon: Calendar,
+      title: "Content Scheduling",
+      description: "Plan and schedule your content in advance with intelligent timing optimization."
+    },
+    {
+      icon: Users,
+      title: "Engagement Boost",
+      description: "Request authentic engagement from the community to increase your visibility."
+    },
+    {
+      icon: Shield,
+      title: "Wallet Management",
+      description: "Simple deposit and withdrawal system for earning through participation."
+    }
+  ],
+  influencer: [
+    {
+      icon: DollarSign,
+      title: "Monetize Your Following",
+      description: "Allow brands to advertise on your accounts and earn passive revenue."
+    },
+    {
+      icon: TrendingUp,
+      title: "Advanced Analytics",
+      description: "Deep insights into performance, revenue optimization, and growth tracking."
+    },
+    {
+      icon: Zap,
+      title: "AI Content Generation",
+      description: "Create engaging content automatically that matches your brand voice."
+    },
+    {
+      icon: Target,
+      title: "Multi-Platform Sync",
+      description: "Manage all your social accounts from one unified dashboard."
+    }
+  ],
+  agency: [
+    {
+      icon: Workflow,
+      title: "Client Management",
+      description: "Manage multiple client accounts with advanced workflow automation."
+    },
+    {
+      icon: DollarSign,
+      title: "Revenue Optimization",
+      description: "Maximize ROI across all client campaigns with intelligent ad placement."
+    },
+    {
+      icon: Users,
+      title: "Team Collaboration",
+      description: "Assign roles and manage team access across client projects."
+    },
+    {
+      icon: TrendingUp,
+      title: "White-label Reports",
+      description: "Generate professional reports and analytics for your clients."
+    }
+  ]
+};
+
 const FeaturesSection = () => {
   return (
-    <section id="features" className="py-20 bg-muted/20">
+    <section id="features" className="py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Comprehensive Features for
-            <span className="gradient-text"> Social Media Excellence</span>
+            Features & Benefits 
+            <span className="gradient-text"> by Role</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A unified solution combining automation, advertising management, and engagement optimization to simplify multi-platform social media management
+            Tailored solutions for every type of user - from individual creators to large agencies
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
-            return (
-              <Card key={index} className="glass hover:glow transition-all duration-300 group">
-                <CardHeader>
-                  <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/30 transition-colors">
-                    <Icon className="h-6 w-6 text-primary" />
-                  </div>
-                  <CardTitle className="text-lg">{feature.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-muted-foreground">
-                    {feature.description}
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            );
-          })}
+        {/* Regular Users */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-center mb-8 gradient-text">For Regular Users</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {roleFeatures.regular.map((feature, index) => {
+              const Icon = feature.icon;
+              return (
+                <Card key={index} className="glass hover:glow transition-all duration-300 group">
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-500/30 transition-colors">
+                      <Icon className="h-6 w-6 text-blue-400" />
+                    </div>
+                    <CardTitle className="text-lg">{feature.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-muted-foreground">
+                      {feature.description}
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Influencers */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-center mb-8 gradient-text">For Influencers</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {roleFeatures.influencer.map((feature, index) => {
+              const Icon = feature.icon;
+              return (
+                <Card key={index} className="glass hover:glow transition-all duration-300 group">
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-purple-500/30 transition-colors">
+                      <Icon className="h-6 w-6 text-purple-400" />
+                    </div>
+                    <CardTitle className="text-lg">{feature.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-muted-foreground">
+                      {feature.description}
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Agencies */}
+        <div>
+          <h3 className="text-2xl font-bold text-center mb-8 gradient-text">For Agencies</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {roleFeatures.agency.map((feature, index) => {
+              const Icon = feature.icon;
+              return (
+                <Card key={index} className="glass hover:glow transition-all duration-300 group">
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-emerald-500/30 transition-colors">
+                      <Icon className="h-6 w-6 text-emerald-400" />
+                    </div>
+                    <CardTitle className="text-lg">{feature.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-muted-foreground">
+                      {feature.description}
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

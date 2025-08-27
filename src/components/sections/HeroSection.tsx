@@ -1,10 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Zap, TrendingUp } from "lucide-react";
-import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-hero"></div>
       
       {/* Animated background elements */}
@@ -14,53 +13,74 @@ const HeroSection = () => {
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
+          {/* Clear headline & subheadline */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Revolutionize Your
-            <span className="gradient-text"> Digital Presence</span>
+            Automate Your Social Media,
+            <span className="gradient-text"> Maximize Your Revenue</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            A fully automated platform that empowers influencers, corporations, and individuals to streamline their social media management while unlocking new revenue opportunities through intelligent automation and engagement optimization.
+            The only platform you need to streamline multi-platform social media management while unlocking new revenue streams through intelligent automation.
           </p>
           
+          {/* Call-to-action */}
           <div className="flex flex-col md:flex-row gap-4 justify-center mb-12">
-            <Link to="/register">
+            <a 
+              href="#survey" 
+              className="inline-block"
+            >
               <Button size="lg" className="glow hover:glow-intense transition-all duration-300 group">
-                Start Automating
+                Join the Waitlist
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-            </Link>
-            <Button variant="outline" size="lg" className="border-primary/50 hover:border-primary">
-              Watch Demo
-            </Button>
+            </a>
+            <a href="#about">
+              <Button variant="outline" size="lg" className="border-primary/50 hover:border-primary">
+                Learn More
+              </Button>
+            </a>
           </div>
           
-          {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
-            <div className="glass p-6 rounded-lg">
-              <div className="flex items-center justify-center mb-2">
-                <Zap className="h-8 w-8 text-primary" />
-              </div>
-              <div className="text-2xl font-bold gradient-text">500K+</div>
-              <div className="text-sm text-muted-foreground">Posts Automated</div>
-            </div>
-            
-            <div className="glass p-6 rounded-lg">
-              <div className="flex items-center justify-center mb-2">
-                <TrendingUp className="h-8 w-8 text-primary" />
-              </div>
-              <div className="text-2xl font-bold gradient-text">$2.5M+</div>
-              <div className="text-sm text-muted-foreground">Revenue Generated</div>
-            </div>
-            
-            <div className="glass p-6 rounded-lg">
-              <div className="flex items-center justify-center mb-2">
-                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                  <span className="text-primary-foreground font-bold">AI</span>
+          {/* Social proof - Platform logos */}
+          <div className="mb-8">
+            <p className="text-sm text-muted-foreground mb-6">Trusted by influencers & agencies</p>
+            <div className="flex items-center justify-center gap-8 flex-wrap opacity-60">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">IG</span>
                 </div>
+                <span className="text-sm">Instagram</span>
               </div>
-              <div className="text-2xl font-bold gradient-text">99.9%</div>
-              <div className="text-sm text-muted-foreground">Uptime</div>
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">FB</span>
+                </div>
+                <span className="text-sm">Facebook</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">TT</span>
+                </div>
+                <span className="text-sm">TikTok</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">X</span>
+                </div>
+                <span className="text-sm">Twitter/X</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">YT</span>
+                </div>
+                <span className="text-sm">YouTube</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">TH</span>
+                </div>
+                <span className="text-sm">Threads</span>
+              </div>
             </div>
           </div>
         </div>
