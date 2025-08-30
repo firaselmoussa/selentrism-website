@@ -3,7 +3,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 const faqs = [
   {
     question: "How secure is my social media data?",
-    answer: "We use enterprise-grade encryption and never store your social media passwords. All connections use official API integrations with read/write permissions that you can revoke at any time. Your data is protected by the same security standards used by major financial institutions."
+    answer: "We use enterprise-grade encryption and never store your social media passwords. All connections use official API integrations with permissions that you can revoke at any time. Your data is protected by the same security standards used by major financial institutions."
   },
   {
     question: "What's the pricing structure?",
@@ -11,11 +11,11 @@ const faqs = [
   },
   {
     question: "When will the platform be fully available?",
-    answer: "Beta testing is currently underway with select users. Early access launches in Q2 2024, with full public release scheduled for Q3 2024. Waitlist members get priority access and exclusive onboarding support."
+    answer: "Beta testing is currently underway with select users. Early access launches in Q2 2026, with full public release scheduled for Q4 2024. Waitlist members get priority access and exclusive onboarding support."
   },
   {
     question: "Which social media platforms do you support?",
-    answer: "Currently supporting Instagram, Facebook, Twitter/X, TikTok, YouTube, and Threads. We're constantly adding new platforms based on user demand. LinkedIn and Pinterest integration are planned for late 2024."
+    answer: "Currently supporting Instagram, Facebook, Twitter/X, TikTok, YouTube, and Threads. We're constantly adding new platforms based on user demand."
   },
   {
     question: "How does the AI ensure authentic engagement?",
@@ -45,7 +45,7 @@ const FAQSection = () => {
             <span className="gradient-text"> Questions</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Everything you need to know about the Global Presence Project
+            Everything you need to know about The Global Presence Project
           </p>
         </div>
 

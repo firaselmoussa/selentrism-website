@@ -56,25 +56,35 @@ const features = [
 const roleFeatures = {
   regular: [
     {
-      icon: Workflow,
-      title: "Simple Automation",
-      description: "Create basic workflows to automate your posting schedule across platforms."
+      icon: DollarSign,
+      title: "Ad Hosting",
+      description: "Monetize your accounts by allowing advertisers to place passive or direct ads that match your niche, vibe, and personality. Customize ad type, category, frequency, and placement (e.g., story only) to ensure alignment with your audience, brand, and content strategy."
     },
     {
-      icon: Calendar,
-      title: "Content Scheduling",
-      description: "Plan and schedule your content in advance with intelligent timing optimization."
+      icon: Target,
+      title: "Ad Placement",
+      description: "Promote products, services or content on other users’ accounts through passive or direct ads. Host accounts targeted and ad content is generated per account to ensure the highest authenticity, engagement, and relevance for both the audience and the host account."
     },
     {
+      icon: DollarSign,
+      title: "Engagement Participation",
+      description: "Earn by enabling automated liking, sharing, or commenting on sponsored content. You may customize and specify type of engagment (e.g. only liking) content type to allow engagment on as well as the frequency of engagment."
+    },
+       {
       icon: Users,
-      title: "Engagement Boost",
-      description: "Request authentic engagement from the community to increase your visibility."
+      title: "Engagement Request",
+      description: "Increase visibility of your own content & accounts through authentic engagement from the community."
     },
-    {
-      icon: Shield,
-      title: "Wallet Management",
-      description: "Simple deposit and withdrawal system for earning through participation."
-    }
+           {
+      icon: Workflow,
+      title: "Automation & Scheduling",
+      description: "Create basic workflows to automate content generation & posting schedule across platforms. Plan and schedule your content in advance with intelligent timing optimization."
+    },
+    // {
+    //   icon: Shield,
+    //   title: "Wallet Management",
+    //   description: "Simple deposit and withdrawal system for earning through participation."
+    // }
   ],
   influencer: [
     {
@@ -139,7 +149,7 @@ const FeaturesSection = () => {
         {/* Regular Users */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-center mb-8 gradient-text">For Regular Users</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             {roleFeatures.regular.map((feature, index) => {
               const Icon = feature.icon;
               return (

@@ -16,15 +16,15 @@ const FooterSection = () => {
             <div className="space-y-2 text-sm">
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>hello@globalpresence.com</span>
+                <span>theglobalpresenceproject@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-primary" />
-                <span>+1 (555) 123-4567</span>
+                <span>+0 1234567</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-primary" />
-                <span>San Francisco, CA</span>
+                <span>All around the globe </span>
               </div>
             </div>
           </div>
@@ -51,8 +51,12 @@ const FooterSection = () => {
             </ul>
           </div>
 
+
+          <div className="w-20 h-20">
+            <img src="/lovable-uploads/the_global_presence_project_icon_tr.png" alt="" />
+          </div>
           {/* Newsletter */}
-          <Card className="glass">
+          {/* <Card className="glass">
             <CardContent className="p-6">
               <h4 className="font-semibold mb-4">Stay Updated</h4>
               <p className="text-sm text-muted-foreground mb-4">
@@ -70,7 +74,7 @@ const FooterSection = () => {
                 </Button>
               </div>
             </CardContent>
-          </Card>
+          </Card> */}
         </div>
 
         {/* Bottom Section */}

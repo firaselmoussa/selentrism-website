@@ -33,7 +33,7 @@ const SurveySection = () => {
                     <Star className="h-6 w-6 text-primary" />
                   </div>
                   <h3 className="font-semibold mb-2">Exclusive Access</h3>
-                  <p className="text-sm text-muted-foreground">First 100 users get lifetime priority support</p>
+                  <p className="text-sm text-muted-foreground">Get priority onboarding & support</p>
                 </div>
                 
                 <div className="text-center">
@@ -41,24 +41,24 @@ const SurveySection = () => {
                     <Gift className="h-6 w-6 text-accent" />
                   </div>
                   <h3 className="font-semibold mb-2">Bonus Features</h3>
-                  <p className="text-sm text-muted-foreground">Early adopters get premium features for free</p>
+                  <p className="text-sm text-muted-foreground">Unlock premium features for free</p>
                 </div>
                 
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mx-auto mb-3">
-                    <Clock className="h-6 w-6 text-secondary" />
+                  <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                    <Clock className="h-6 w-6 text-accent" />
                   </div>
                   <h3 className="font-semibold mb-2">Early Launch</h3>
-                  <p className="text-sm text-muted-foreground">Get access 30 days before public release</p>
+                  <p className="text-sm text-muted-foreground">Get access before public release</p>
                 </div>
               </div>
 
               {/* Survey CTA */}
               <div className="text-center space-y-4">
-                <p className="text-lg font-medium">Ready to transform your social media strategy?</p>
+                <p className="text-lg font-medium">Ready to transform your social media presence?</p>
                 
                 <a 
-                  href="https://airtable.com/appYourAirtableAppId/shrYourFormId" 
+                  href="https://airtable.com/appHyeDelOzMp9CYK/pagIaOAtKsQVxTfdW/form" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-block"
@@ -78,13 +78,13 @@ const SurveySection = () => {
               <div className="bg-muted/50 rounded-lg p-4">
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-sm font-medium">Waitlist Progress</span>
-                  <span className="text-sm text-muted-foreground">847 / 1000</span>
+                  <span className="text-sm text-muted-foreground">82%</span>
                 </div>
                 <div className="w-full bg-muted rounded-full h-2">
                   <div className="bg-gradient-to-r from-primary to-accent h-2 rounded-full" style={{ width: "84.7%" }}></div>
                 </div>
                 <p className="text-xs text-muted-foreground mt-2">
-                  Only 153 spots remaining for early access
+                  Limited spots remaining for early access
                 </p>
               </div>
             </CardContent>

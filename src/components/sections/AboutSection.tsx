@@ -21,9 +21,10 @@ const AboutSection = () => {
                 <h3 className="text-2xl font-bold">The Problem</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                Social media management across multiple platforms is fragmented, time-consuming, and lacks unified revenue optimization. 
-                Influencers, agencies, and businesses struggle with manual posting, inconsistent engagement, 
-                and missed monetization opportunities while juggling multiple tools and platforms.
+                Managing a strong digital presence has become increasingly complex for individuals, influencers, and businesses.
+                With multiple platforms to juggle, campaigns to oversee, and engagement to maintain, the process is time-consuming and overwhelming.
+                 Many users struggle to turn their presence into meaningful revenue, while brands face difficulties in placing authentic and effective ads. 
+                 On top of this, achieving genuine engagement often means relying on costly or unreliable third-party services, leaving a significant gap between potential and reality.
               </p>
             </CardContent>
           </Card>
@@ -36,9 +37,7 @@ const AboutSection = () => {
                 <h3 className="text-2xl font-bold">Our Solution</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                A unified automation platform that combines workflow creation, intelligent scheduling, 
-                ad management, and engagement optimization. Our drag-and-drop interface lets users create 
-                custom automation chains while our AI ensures authentic, revenue-generating interactions.
+                The Global Presence Project provides a fully automated platform that simplifies social media management and opens new opportunities for monetization. By combining automation, advertising management, and AI-powered engagement optimization, we make it easier for users to grow, scale, and monetize their accounts. Our system ensures advertisers can place targeted, authentic campaigns while publishers can generate income with ease. Whether you’re an individual user, an influencer, or a global brand, our platform streamlines the entire process, turning complexity into clarity and effort into results.
               </p>
             </CardContent>
           </Card>
@@ -51,9 +50,7 @@ const AboutSection = () => {
                 <h3 className="text-2xl font-bold">Vision & Mission</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                To democratize social media success by making professional-grade automation and monetization 
-                tools accessible to everyone. We're building the future where digital presence management 
-                is seamless, profitable, and authentically engaging.
+                Our vision is to revolutionize the way people and brands build, manage, and grow their digital presence by making social media more accessible, profitable, and impactful for everyone. We are driven by the mission to deliver a futuristic, automated platform that empowers users to scale their accounts authentically, unlock revenue streams regardless of their size or reach, and provide advertisers with smarter, data-driven solutions. By fostering genuine engagement across global audiences, we aim to reshape the future of digital interaction.
               </p>
             </CardContent>
           </Card>
@@ -62,13 +59,11 @@ const AboutSection = () => {
           <Card className="glass">
             <CardContent className="p-8">
               <div className="flex items-center mb-6">
-                <Calendar className="h-8 w-8 text-secondary mr-3" />
+                <Calendar className="h-8 w-8 text-accent mr-3" />
                 <h3 className="text-2xl font-bold">Current Stage</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                We're in the final development phase with beta testing underway. 
-                Early access launching Q2 2024 with full platform rollout by Q3. 
-                Join our waitlist to be among the first to revolutionize your digital presence.
+                We are currently in the prototype and MVP pre-launch phase. The core features such as account integration, ad placement, and engagement requests are already in place. At the same time, we are finalizing our minimum viable product, which includes automation workflows, wallet and balance management, and complete campaign tools. As we move into pre-launch, we are working closely with early adopters and partners to refine the experience before unveiling the platform to the public.
               </p>
             </CardContent>
           </Card>

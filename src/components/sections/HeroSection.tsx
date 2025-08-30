@@ -15,8 +15,8 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto">
           {/* Clear headline & subheadline */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Automate Your Social Media,
-            <span className="gradient-text"> Maximize Your Revenue</span>
+            Automate Your Digital Empire,
+            <span className="gradient-text"> Monetize Your Presence</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
@@ -30,7 +30,7 @@ const HeroSection = () => {
               className="inline-block"
             >
               <Button size="lg" className="glow hover:glow-intense transition-all duration-300 group">
-                Join the Waitlist
+                Join Waitlist
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </a>
@@ -47,37 +47,37 @@ const HeroSection = () => {
             <div className="flex items-center justify-center gap-8 flex-wrap opacity-60">
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
-                  <span className="text-white text-xs font-bold">IG</span>
+                  <img src="/lovable-uploads/instagram_icon.png" alt="instagram icon" />
                 </div>
                 <span className="text-sm">Instagram</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white text-xs font-bold">FB</span>
+                  <img src="/lovable-uploads/facebook_icon.png" alt="facebook icon" />
                 </div>
                 <span className="text-sm">Facebook</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
-                  <span className="text-white text-xs font-bold">TT</span>
+                  <img src="/lovable-uploads/tiktok_icon.png" alt="tiktok icon" />
                 </div>
                 <span className="text-sm">TikTok</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
-                  <span className="text-white text-xs font-bold">X</span>
+                  <img src="/lovable-uploads/twitter_x_icon.png" alt="twitter/X icon" />
                 </div>
                 <span className="text-sm">Twitter/X</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white text-xs font-bold">YT</span>
+                <div className="w-8 h-6 bg-red-600 rounded-lg flex items-center justify-center">
+                  <img src="/lovable-uploads/youtube_icon.png" alt="youtube icon" />
                 </div>
                 <span className="text-sm">YouTube</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
-                  <span className="text-white text-xs font-bold">TH</span>
+                  <img src="/lovable-uploads/threads_icon.png" alt="threads icon" />
                 </div>
                 <span className="text-sm">Threads</span>
               </div>

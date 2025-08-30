@@ -20,12 +20,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <button onClick={() => scrollToSection('home')} className="flex items-center space-x-2">
-            <img 
-              src="/lovable-uploads/dc452938-0324-47e1-a9f0-d65c980cae25.png" 
+            {/* <img 
+              src="/lovable-uploads/the_global_presence_project_icon_tr.png" 
               alt="Global Presence Project"
-              className="h-8 w-8"
-            />
-            <span className="text-xl font-bold gradient-text">Global Presence</span>
+              className="h-10 w-10"
+            /> */}
+            <span className="text-xl font-bold gradient-text">The Global Presence Project</span>
           </button>
 
           {/* Desktop Navigation */}
@@ -64,9 +64,9 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link to="/login">
+            {/* <Link to="/login">
               <Button variant="ghost">Login</Button>
-            </Link>
+            </Link> */}
             <button onClick={() => scrollToSection('survey')}>
               <Button className="glow">Join Waitlist</Button>
             </button>
@@ -116,9 +116,9 @@ const Navbar = () => {
                 FAQ
               </button>
               <div className="flex flex-col space-y-2 pt-4">
-                <Link to="/login">
+                {/* <Link to="/login">
                   <Button variant="ghost" className="w-full">Login</Button>
-                </Link>
+                </Link> */}
                 <button onClick={() => scrollToSection('survey')} className="w-full">
                   <Button className="w-full glow">Join Waitlist</Button>
                 </button>

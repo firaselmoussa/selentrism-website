@@ -150,7 +150,7 @@ const CaseStudiesSection = () => {
           <Card className="glass text-center">
             <CardContent className="p-6">
               <Users className="h-8 w-8 text-primary mx-auto mb-2" />
-              <div className="text-2xl font-bold gradient-text">500+</div>
+              <div className="text-2xl font-bold gradient-text">100+</div>
               <div className="text-sm text-muted-foreground">Beta Users</div>
             </CardContent>
           </Card>
@@ -163,18 +163,18 @@ const CaseStudiesSection = () => {
             </CardContent>
           </Card>
           
-          <Card className="glass text-center">
+          {/* <Card className="glass text-center">
             <CardContent className="p-6">
               <DollarSign className="h-8 w-8 text-primary mx-auto mb-2" />
               <div className="text-2xl font-bold gradient-text">$2.5M+</div>
               <div className="text-sm text-muted-foreground">Revenue Generated</div>
             </CardContent>
-          </Card>
+          </Card> */}
           
           <Card className="glass text-center">
             <CardContent className="p-6">
               <Target className="h-8 w-8 text-primary mx-auto mb-2" />
-              <div className="text-2xl font-bold gradient-text">95%</div>
+              <div className="text-2xl font-bold gradient-text">96%</div>
               <div className="text-sm text-muted-foreground">Satisfaction Rate</div>
             </CardContent>
           </Card>
