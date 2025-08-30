@@ -17,146 +17,74 @@ const featureTable = [
   {
     icon: Workflow,
     name: "Workflow Automation",
-    regular: {
-      available: true,
-      description: "Create basic workflows to automate content generation & posting schedule across platforms. Plan and schedule your content in advance with intelligent timing optimization."
-    },
-    influencer: {
-      available: true,
-      description: "Build advanced custom applications using drag-and-drop functionality. Create complex automation chains like generate_content → analyze_performance → optimize_posting."
-    },
-    agency: {
-      available: true,
-      description: "Manage multiple client accounts with advanced workflow automation. Create sophisticated automation chains for multiple clients simultaneously."
-    }
+    description: "Build custom applications using drag-and-drop functionality to create seamless automation chains. Schedule workflows to run automatically at defined intervals, from simple content posting to complex multi-step campaigns. Create automation sequences like generate_content → analyze_performance → optimize_posting with intelligent timing and cross-platform synchronization.",
+    regular: { available: true },
+    influencer: { available: true },
+    agency: { available: true }
   },
   {
     icon: TrendingUp,
     name: "Analytics Dashboard",
-    regular: {
-      available: false,
-      description: "Basic analytics not included in regular plan."
-    },
-    influencer: {
-      available: true,
-      description: "Deep insights into performance, revenue optimization, and growth tracking. Advanced metrics for content optimization and audience analysis."
-    },
-    agency: {
-      available: true,
-      description: "Generate professional white-label reports and analytics for your clients. Comprehensive dashboard for managing multiple client metrics."
-    }
+    description: "Comprehensive analytics and reporting system with deep insights into performance metrics, revenue optimization, and growth tracking. Generate professional reports with detailed campaign analytics, audience insights, and ROI measurements. Advanced dashboard with real-time performance monitoring and customizable reporting tools.",
+    regular: { available: false },
+    influencer: { available: true },
+    agency: { available: true }
   },
   {
     icon: Users,
     name: "Team Management",
-    regular: {
-      available: false,
-      description: "Team management features not available for regular users."
-    },
-    influencer: {
-      available: false,
-      description: "Individual influencer accounts don't include team management features."
-    },
-    agency: {
-      available: true,
-      description: "Assign roles and manage team access across client projects. Full collaboration tools for agency teams."
-    }
+    description: "Complete team collaboration and management system with role-based access control. Assign specific permissions, manage team member access across multiple accounts and projects. Includes user role management, access logging, and collaborative workspace features for seamless team coordination.",
+    regular: { available: false },
+    influencer: { available: false },
+    agency: { available: true }
   },
   {
     icon: DollarSign,
     name: "Paid Promotions",
-    regular: {
-      available: true,
-      description: "Monetize your accounts by allowing advertisers to place ads. Promote your content on other users' accounts. Participate in engagement campaigns for compensation."
-    },
-    influencer: {
-      available: true,
-      description: "Allow brands to advertise on your accounts and earn passive revenue. Advanced monetization options with brand partnership tools."
-    },
-    agency: {
-      available: true,
-      description: "Maximize ROI across all client campaigns with intelligent ad placement. Advanced revenue optimization tools for client accounts."
-    }
+    description: "Comprehensive advertising and monetization platform allowing users to place ads on other accounts and earn revenue by hosting advertisements. Includes intelligent ad placement, campaign management, revenue tracking, and automated billing systems with full control over ad types and placement strategies.",
+    regular: { available: true },
+    influencer: { available: true },
+    agency: { available: true }
   },
   {
     icon: Users,
     name: "Engagement Optimization",
-    regular: {
-      available: true,
-      description: "Request engagement boosts for increased visibility or participate in others' campaigns. Earn by enabling automated liking, sharing, or commenting on sponsored content."
-    },
-    influencer: {
-      available: true,
-      description: "Advanced engagement strategies with AI-generated authentic interactions. Premium engagement boost options for maximum visibility."
-    },
-    agency: {
-      available: true,
-      description: "Comprehensive engagement management across all client accounts. Advanced targeting and engagement optimization tools."
-    }
+    description: "Advanced engagement boost system that increases content visibility through authentic community interactions. Request engagement campaigns for your content or participate in others' campaigns for compensation. Includes AI-generated realistic comments, strategic liking, sharing, and engagement timing optimization.",
+    regular: { available: true },
+    influencer: { available: true },
+    agency: { available: true }
   },
   {
     icon: Calendar,
     name: "Intelligent Scheduling",
-    regular: {
-      available: true,
-      description: "Schedule workflows to run automatically at defined intervals. Basic scheduling with optimal timing suggestions."
-    },
-    influencer: {
-      available: true,
-      description: "Advanced scheduling with AI-powered optimal timing analysis. Cross-platform synchronization and content calendar management."
-    },
-    agency: {
-      available: true,
-      description: "Enterprise-level scheduling for multiple client accounts. Advanced campaign timing and cross-client coordination."
-    }
+    description: "AI-powered content scheduling system that automatically optimizes posting times for maximum engagement. Schedule workflows, campaigns, and content across multiple platforms with intelligent timing analysis, audience behavior insights, and cross-platform synchronization capabilities.",
+    regular: { available: true },
+    influencer: { available: true },
+    agency: { available: true }
   },
   {
     icon: Shield,
     name: "Integrated Wallet",
-    regular: {
-      available: true,
-      description: "Simple deposit and withdrawal system for earning through participation. Basic transaction history and balance tracking."
-    },
-    influencer: {
-      available: true,
-      description: "Complete financial management with detailed revenue tracking. Advanced analytics for income optimization and tax reporting."
-    },
-    agency: {
-      available: true,
-      description: "Enterprise wallet management with client billing integration. Advanced financial reporting and multi-account management."
-    }
+    description: "Complete financial management system with secure deposit/withdrawal capabilities, transaction history, and balance tracking. Includes automated billing for campaigns, revenue distribution, payment processing, and detailed financial reporting with tax documentation support.",
+    regular: { available: true },
+    influencer: { available: true },
+    agency: { available: true }
   },
   {
     icon: Zap,
     name: "AI-Generated Content",
-    regular: {
-      available: true,
-      description: "Basic AI content generation for comments and simple posts. Standard quality with limited customization options."
-    },
-    influencer: {
-      available: true,
-      description: "Advanced AI creates engaging content that matches your brand voice. Premium content generation with style consistency and audience targeting."
-    },
-    agency: {
-      available: true,
-      description: "Enterprise AI content generation for multiple client brands. Advanced customization and brand voice consistency across all accounts."
-    }
+    description: "Advanced artificial intelligence system that creates realistic, engaging content tailored to specific audiences and brand voices. Generate authentic comments, posts, captions, and interactions that maintain natural engagement patterns while ensuring brand consistency and audience relevance.",
+    regular: { available: true },
+    influencer: { available: true },
+    agency: { available: true }
   },
   {
     icon: Target,
     name: "Multi-Platform Integration",
-    regular: {
-      available: true,
-      description: "Connect and manage basic social media accounts across popular platforms. Standard integration with major platforms."
-    },
-    influencer: {
-      available: true,
-      description: "Manage all your social accounts from one unified dashboard. Premium integrations with advanced cross-platform analytics."
-    },
-    agency: {
-      available: true,
-      description: "Enterprise-level multi-platform management for unlimited client accounts. Advanced API integrations and custom platform support."
-    }
+    description: "Unified dashboard for managing multiple social media accounts across all major platforms including Instagram, Facebook, TikTok, Twitter/X, YouTube, and Threads. Centralized account management with cross-platform analytics, synchronized posting, and comprehensive social media workflow automation.",
+    regular: { available: true },
+    influencer: { available: true },
+    agency: { available: true }
   }
 ];
 
@@ -222,36 +150,11 @@ const FeaturesSection = () => {
                       </div>
                     </AccordionTrigger>
                     <AccordionContent className="p-4 pt-0">
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-                        <Card className={`glass ${!feature.regular.available ? 'opacity-60' : ''}`}>
-                          <CardHeader className="pb-2">
-                            <CardTitle className="text-sm text-blue-400">Regular User</CardTitle>
-                          </CardHeader>
-                          <CardContent className="pt-0">
-                            <CardDescription className="text-sm">
-                              {feature.regular.description}
-                            </CardDescription>
-                          </CardContent>
-                        </Card>
-                        
-                        <Card className={`glass ${!feature.influencer.available ? 'opacity-60' : ''}`}>
-                          <CardHeader className="pb-2">
-                            <CardTitle className="text-sm text-purple-400">Influencer</CardTitle>
-                          </CardHeader>
-                          <CardContent className="pt-0">
-                            <CardDescription className="text-sm">
-                              {feature.influencer.description}
-                            </CardDescription>
-                          </CardContent>
-                        </Card>
-                        
-                        <Card className={`glass ${!feature.agency.available ? 'opacity-60' : ''}`}>
-                          <CardHeader className="pb-2">
-                            <CardTitle className="text-sm text-emerald-400">Agency</CardTitle>
-                          </CardHeader>
-                          <CardContent className="pt-0">
-                            <CardDescription className="text-sm">
-                              {feature.agency.description}
+                      <div className="mt-4">
+                        <Card className="glass">
+                          <CardContent className="p-4">
+                            <CardDescription className="text-base">
+                              {feature.description}
                             </CardDescription>
                           </CardContent>
                         </Card>
