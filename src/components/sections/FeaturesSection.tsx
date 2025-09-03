@@ -10,15 +10,81 @@ import {
   Zap,
   Target,
   Check,
-  X
+  X,
+  BookMarked
 } from "lucide-react";
+import { focusManager } from "@tanstack/react-query";
 
 const featureTable = [
   {
+    icon: DollarSign,
+    name: "Ad Hosting",
+    description: "Monetize your accounts by allowing advertisers to place passive or direct ads that match your niche, vibe, and personality. Customize ad type, category, frequency, and placement (e.g., story only) to ensure alignment with your audience, brand, and content strategy.",
+    regular: { available: true },
+    influencer: { available: true },
+    agency: { available: true }
+  },
+  {
+    icon: DollarSign,
+    name: "Engagement Participation",
+    description: "Earn by enabling automated liking, sharing, or commenting on sponsored content. You may customize and specify type of engagement (e.g. only liking) content type to engage with, as well as the frequency of engagement.",
+    regular: { available: true },
+    influencer: { available: true },
+    agency: { available: true }
+  },
+    {
+    icon: Target,
+    name: "Multi-Platform Integration",
+    description: "Unified dashboard for managing multiple social media accounts across all major platforms including Instagram, Facebook, TikTok, Twitter/X, YouTube, and Threads. Centralized account management with cross-platform analytics.",
+    regular: { available: true },
+    influencer: { available: true },
+    agency: { available: true }
+  },
+  {
+    icon: Shield,
+    name: "Integrated Wallet",
+    description: "Complete financial management system with secure deposit/withdrawal capabilities, transaction history, and balance tracking.",
+    regular: { available: true },
+    influencer: { available: true },
+    agency: { available: true }
+  },
+  {
+    icon: Target,
+    name: "Ad Placement",
+    description: "Promote products, services or content on other users’ accounts through passive or direct ads. Host accounts targeted and ad content is generated per account to ensure the highest authenticity, engagement, and relevance for both the audience and the host account.",
+    regular: { available: false },
+    influencer: { available: true },
+    agency: { available: true }
+  },
+  {
+    icon: Users,
+    name: "Engagement Request",
+    description: "Advanced engagement boost system that increases content/account visibility through authentic community interactions. Includes AI-generated realistic comments, strategic liking, sharing  by real accounts and engagement timing optimization.",
+    regular: { available: false },
+    influencer: { available: true },
+    agency: { available: true }
+  },
+  {
+    icon: Zap,
+    name: "AI-Generated Content",
+    description: "Advanced artificial intelligence system that creates realistic, engaging content tailored to specific audiences and brand voices. Generate authentic content that maintain natural engagement patterns while ensuring brand consistency and audience relevance.",
+    regular: { available: false },
+    influencer: { available: true },
+    agency: { available: true }
+  },
+  {
     icon: Workflow,
     name: "Workflow Automation",
-    description: "Build custom applications using drag-and-drop functionality to create seamless automation chains. Schedule workflows to run automatically at defined intervals, from simple content posting to complex multi-step campaigns. Create automation sequences like generate_content → analyze_performance → optimize_posting with intelligent timing and cross-platform synchronization.",
-    regular: { available: true },
+    description: "Build custom applications using drag-and-drop functionality to create seamless automation chains. Schedule workflows to run automatically at defined intervals, from simple content posting to complex multi-step campaigns.",
+    regular: { available: false },
+    influencer: { available: true },
+    agency: { available: true }
+  },
+    {
+    icon: Calendar,
+    name: "Intelligent Scheduling",
+    description: "Intelligent content scheduling system that automatically optimizes posting times for maximum engagement. Schedule workflows, campaigns, and content across multiple platforms with intelligent timing analysis, audience behavior insights, and cross-platform synchronization capabilities.",
+    regular: { available: false },
     influencer: { available: true },
     agency: { available: true }
   },
@@ -39,51 +105,11 @@ const featureTable = [
     agency: { available: true }
   },
   {
-    icon: DollarSign,
-    name: "Paid Promotions",
-    description: "Comprehensive advertising and monetization platform allowing users to place ads on other accounts and earn revenue by hosting advertisements. Includes intelligent ad placement, campaign management, revenue tracking, and automated billing systems with full control over ad types and placement strategies.",
-    regular: { available: true },
-    influencer: { available: true },
-    agency: { available: true }
-  },
-  {
-    icon: Users,
-    name: "Engagement Optimization",
-    description: "Advanced engagement boost system that increases content visibility through authentic community interactions. Request engagement campaigns for your content or participate in others' campaigns for compensation. Includes AI-generated realistic comments, strategic liking, sharing, and engagement timing optimization.",
-    regular: { available: true },
-    influencer: { available: true },
-    agency: { available: true }
-  },
-  {
-    icon: Calendar,
-    name: "Intelligent Scheduling",
-    description: "AI-powered content scheduling system that automatically optimizes posting times for maximum engagement. Schedule workflows, campaigns, and content across multiple platforms with intelligent timing analysis, audience behavior insights, and cross-platform synchronization capabilities.",
-    regular: { available: true },
-    influencer: { available: true },
-    agency: { available: true }
-  },
-  {
-    icon: Shield,
-    name: "Integrated Wallet",
-    description: "Complete financial management system with secure deposit/withdrawal capabilities, transaction history, and balance tracking. Includes automated billing for campaigns, revenue distribution, payment processing, and detailed financial reporting with tax documentation support.",
-    regular: { available: true },
-    influencer: { available: true },
-    agency: { available: true }
-  },
-  {
-    icon: Zap,
-    name: "AI-Generated Content",
-    description: "Advanced artificial intelligence system that creates realistic, engaging content tailored to specific audiences and brand voices. Generate authentic comments, posts, captions, and interactions that maintain natural engagement patterns while ensuring brand consistency and audience relevance.",
-    regular: { available: true },
-    influencer: { available: true },
-    agency: { available: true }
-  },
-  {
-    icon: Target,
-    name: "Multi-Platform Integration",
-    description: "Unified dashboard for managing multiple social media accounts across all major platforms including Instagram, Facebook, TikTok, Twitter/X, YouTube, and Threads. Centralized account management with cross-platform analytics, synchronized posting, and comprehensive social media workflow automation.",
-    regular: { available: true },
-    influencer: { available: true },
+    icon: BookMarked,
+    name: "Advanced Marketing Suite",
+    description: "Launch and manage full-scale targeted marketing campaigns with smart ad placement, comprehensive campaign management, revenue tracking, and automated billing. Gain complete control over ad types and strategies, and effortlessly handle multiple campaigns across unlimited clients and digital platforms.",
+    regular: { available: false },
+    influencer: { available: false },
     agency: { available: true }
   }
 ];
@@ -107,9 +133,28 @@ const FeaturesSection = () => {
             {/* Table Header */}
             <div className="grid grid-cols-4 gap-4 mb-6 p-4 glass rounded-lg">
               <div className="font-bold text-lg">Feature</div>
-              <div className="font-bold text-lg text-center gradient-text">Regular</div>
-              <div className="font-bold text-lg text-center gradient-text">Influencer</div>
-              <div className="font-bold text-lg text-center gradient-text">Agency</div>
+              <div>
+                <span className="font-bold text-lg text-center gradient-text">Regular</span>
+               <br />
+                <span className="text-xs text-muted-foreground max-w-3xl mx-auto">
+                  Any social media user can join for free and start monetizing their presence.
+                </span>
+              </div>
+              <div>
+                <span className="font-bold text-lg text-center gradient-text">Influencer</span>
+               <br />
+                <span className="text-xs text-muted-foreground max-w-3xl mx-auto">
+                  Creators with a dedicated following seeking advanced tools to engage and expand their reach.
+                </span>
+              </div>
+              <div>
+                <span className="font-bold text-lg text-center gradient-text">Agency</span>
+               <br />
+                <span className="text-xs text-muted-foreground max-w-3xl mx-auto">
+                  Businesses or teams managing multiple clients and campaigns across platforms.
+                </span>
+              </div>
+              
             </div>
             
             {/* Feature Rows */}

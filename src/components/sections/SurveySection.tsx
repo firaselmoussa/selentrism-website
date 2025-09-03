@@ -64,7 +64,7 @@ const SurveySection = () => {
                   className="inline-block"
                 >
                   <Button size="lg" className="glow hover:glow-intense transition-all duration-300 group">
-                    Complete Survey & Join Waitlist
+                    Join Waitlist
                     <ExternalLink className="ml-2 h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                   </Button>
                 </a>

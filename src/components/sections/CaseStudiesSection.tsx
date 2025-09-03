@@ -146,7 +146,7 @@ const CaseStudiesSection = () => {
         </div>
 
         {/* Summary Stats */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
           <Card className="glass text-center">
             <CardContent className="p-6">
               <Users className="h-8 w-8 text-primary mx-auto mb-2" />
