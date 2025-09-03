@@ -5,10 +5,10 @@ const faqs = [
     question: "How secure is my social media data?",
     answer: "We use enterprise-grade encryption and never store your social media passwords. All connections use official API integrations with permissions that you can revoke at any time. Your data is protected by the same security standards used by major financial institutions."
   },
-  {
-    question: "What's the pricing structure?",
-    answer: "We offer a freemium model with basic automation features available at no cost. Premium plans start at $29/month for influencers and $99/month for agencies, with custom enterprise pricing available. Early adopters get 50% off their first year."
-  },
+  // {
+  //   question: "What's the pricing structure?",
+  //   answer: "We offer a freemium model with basic automation features available at no cost. Premium plans start at $29/month for influencers and $99/month for agencies, with custom enterprise pricing available. Early adopters get 50% off their first year."
+  // },
   {
     question: "When will the platform be fully available?",
     answer: "Beta testing is currently underway with select users. Early access launches in Q2 2026, with full public release scheduled for Q4 2024. Waitlist members get priority access and exclusive onboarding support."
@@ -45,7 +45,7 @@ const FAQSection = () => {
             <span className="gradient-text"> Questions</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Everything you need to know about The Global Presence Project
+            Everything you need to know about Selentrism
           </p>
         </div>
 

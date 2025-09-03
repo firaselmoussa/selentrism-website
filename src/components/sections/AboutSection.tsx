@@ -8,7 +8,7 @@ const AboutSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             About the 
-            <span className="gradient-text"> Global Presence Project</span>
+            <span className="gradient-text"> Selentrism</span>
           </h2>
         </div>
         
@@ -37,7 +37,7 @@ const AboutSection = () => {
                 <h3 className="text-2xl font-bold">Our Solution</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                The Global Presence Project provides a fully automated platform that simplifies social media management and opens new opportunities for monetization. By combining automation, advertising management, and AI-powered engagement optimization, we make it easier for users to grow, scale, and monetize their accounts. Our system ensures advertisers can place targeted, authentic campaigns while publishers can generate income with ease. Whether you’re an individual user, an influencer, or a global brand, our platform streamlines the entire process, turning complexity into clarity and effort into results.
+                Selentrism provides a fully automated platform that simplifies social media management and opens new opportunities for monetization. By combining automation, advertising management, and AI-powered engagement optimization, we make it easier for users to grow, scale, and monetize their accounts. Our system ensures advertisers can place targeted, authentic campaigns while publishers can generate income with ease. Whether you’re an individual user, an influencer, or a global brand, our platform streamlines the entire process, turning complexity into clarity and effort into results.
               </p>
             </CardContent>
           </Card>

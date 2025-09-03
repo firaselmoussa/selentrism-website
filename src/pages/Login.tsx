@@ -28,7 +28,7 @@ const Login = () => {
             </div>
             <CardTitle className="text-2xl">Welcome Back</CardTitle>
             <CardDescription>
-              Sign in to your Global Presence account
+              Sign in to your Selentrism account
             </CardDescription>
           </CardHeader>
           

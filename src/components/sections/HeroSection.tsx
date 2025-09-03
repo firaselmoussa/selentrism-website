@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -14,9 +14,10 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Clear headline & subheadline */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Automate Your Digital Empire,
-            <span className="gradient-text"> Monetize Your Presence</span>
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight ">
+            <span className="gradient-text">Extend</span> Beyond Limits. <br />
+            <span className="gradient-text">Monetize</span> Your Presence. <br />
+            <span className="gradient-text">Automate</span> Your Digital Empire.
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
@@ -26,14 +27,17 @@ const HeroSection = () => {
           {/* Call-to-action */}
           <div className="flex flex-col md:flex-row gap-4 justify-center mb-12">
             <a 
-              href="#survey" 
-              className="inline-block"
-            >
-              <Button size="lg" className="glow hover:glow-intense transition-all duration-300 group">
-                Join Waitlist
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
+                  href="https://airtable.com/appHyeDelOzMp9CYK/pagIaOAtKsQVxTfdW/form" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block"
+                >
+                  <Button size="lg" className="glow hover:glow-intense transition-all duration-300 group">
+                    Join Waitlist
+                    <ExternalLink className="ml-2 h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  </Button>
             </a>
+            
             <a href="#about">
               <Button variant="outline" size="lg" className="border-primary/50 hover:border-primary">
                 Learn More

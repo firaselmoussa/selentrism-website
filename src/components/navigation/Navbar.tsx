@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { ExternalLink } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,12 +21,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <button onClick={() => scrollToSection('home')} className="flex items-center space-x-2">
-            {/* <img 
-              src="/lovable-uploads/the_global_presence_project_icon_tr.png" 
-              alt="Global Presence Project"
+            <img 
+              src="/lovable-uploads/selentrism_icon_zoomin.jpeg" 
+              alt="Selentrism"
               className="h-10 w-10"
-            /> */}
-            <span className="text-xl font-bold gradient-text">The Global Presence Project</span>
+            />
+            <span className="text-xl font-bold gradient-text">Selentrism</span>
           </button>
 
           {/* Desktop Navigation */}
@@ -42,12 +43,12 @@ const Navbar = () => {
             >
               Features
             </button>
-            <button 
+            {/* <button 
               onClick={() => scrollToSection('case-studies')}
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               Case Studies
-            </button>
+            </button> */}
             <button 
               onClick={() => scrollToSection('survey')}
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -67,9 +68,17 @@ const Navbar = () => {
             {/* <Link to="/login">
               <Button variant="ghost">Login</Button>
             </Link> */}
-            <button onClick={() => scrollToSection('survey')}>
-              <Button className="glow">Join Waitlist</Button>
-            </button>
+            <a 
+                  href="https://airtable.com/appHyeDelOzMp9CYK/pagIaOAtKsQVxTfdW/form" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block"
+                >
+                  <Button size="lg" className="glow hover:glow-intense transition-all duration-300 group">
+                    Join Waitlist
+                    <ExternalLink className="ml-2 h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  </Button>
+                </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -97,12 +106,12 @@ const Navbar = () => {
               >
                 Features
               </button>
-              <button 
+              {/* <button 
                 onClick={() => scrollToSection('case-studies')}
                 className="text-muted-foreground hover:text-primary transition-colors text-left"
               >
                 Case Studies
-              </button>
+              </button> */}
               <button 
                 onClick={() => scrollToSection('survey')}
                 className="text-muted-foreground hover:text-primary transition-colors text-left"

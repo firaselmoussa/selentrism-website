@@ -26,7 +26,7 @@ const Register = () => {
             <div className="w-12 h-12 bg-primary rounded-lg glow flex items-center justify-center mx-auto mb-4">
               <UserPlus className="h-6 w-6 text-primary-foreground" />
             </div>
-            <CardTitle className="text-2xl">Join Global Presence</CardTitle>
+            <CardTitle className="text-2xl">Join Selentrism</CardTitle>
             <CardDescription>
               Start automating your social media empire today
             </CardDescription>
