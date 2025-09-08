@@ -22,5 +22,11 @@ import { componentTagger } from "lovable-tagger";
 // }));
 
 export default defineConfig({
-  base: "/selentrism-website/",
-});
+  base: '/selentrism-website/',   
+  plugins: [react()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),  
+    },
+  },
+})
