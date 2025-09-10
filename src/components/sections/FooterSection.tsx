@@ -1,10 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
+import { Mail, Phone, MapPin, ArrowRight, Instagram } from "lucide-react";
 
 const FooterSection = () => {
   return (
-    <footer className="bg-card py-20">
+    <footer id="footer" className="bg-card py-20">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
 
@@ -78,6 +78,25 @@ const FooterSection = () => {
             </div>
           </div>
 
+          {/* Follow */}
+          {/* <div className="space-y-4">
+            <h4 className="font-semibold">Follow Us</h4>
+            <div className="space-y-2 text-sm">
+              <div className="flex items-center space-x-2">
+                <Instagram className="h-4 w-4 text-primary" />
+                <span>selentrism@gmail.com</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Phone className="h-4 w-4 text-primary" />
+                <span>+0 1234567</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <MapPin className="h-4 w-4 text-primary" />
+                <span>All around the globe</span>
+              </div>
+            </div>
+          </div> */}
+
 
           
 
@@ -107,7 +126,7 @@ const FooterSection = () => {
         <div className="pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-muted-foreground">
-              © 2025 Selentrism. All rights reserved.
+              © {new Date().getFullYear()} Selentrism. All rights reserved.
             </div>
             
             {/* Social Media Links */}

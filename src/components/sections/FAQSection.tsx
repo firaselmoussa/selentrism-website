@@ -11,7 +11,7 @@ const faqs = [
   // },
   {
     question: "When will the platform be fully available?",
-    answer: "Beta testing is currently underway with select users. Early access launches in Q2 2026, with full public release scheduled for Q4 2024. Waitlist members get priority access and exclusive onboarding support."
+    answer: "Beta testing is currently underway with select users. Early access launches in Q1 2026, with full public release scheduled for Q3 2026. Waitlist members get priority access and exclusive onboarding support."
   },
   {
     question: "Which social media platforms do you support?",

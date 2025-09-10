@@ -61,6 +61,13 @@ const Navbar = () => {
             >
               FAQ
             </button>
+            <button 
+                onClick={() => scrollToSection('footer')}
+                className="text-muted-foreground hover:text-primary transition-colors text-left"
+              >
+                Contact
+              </button>
+              <div className="flex flex-col space-y-2 pt-4"></div>
           </div>
 
           {/* Desktop CTA */}
@@ -123,6 +130,12 @@ const Navbar = () => {
                 className="text-muted-foreground hover:text-primary transition-colors text-left"
               >
                 FAQ
+              </button>
+              <button 
+                onClick={() => scrollToSection('footer')}
+                className="text-muted-foreground hover:text-primary transition-colors text-left"
+              >
+                Contact
               </button>
               <div className="flex flex-col space-y-2 pt-4">
                 {/* <Link to="/login">
