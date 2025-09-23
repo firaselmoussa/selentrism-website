@@ -71,17 +71,17 @@ const CaseStudiesSection = () => {
   return (
     <section id="case-studies" className="py-20 bg-muted/20">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-16 px-4 sm:px-0">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Success Stories &
             <span className="gradient-text"> Growth Metrics</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Real results from our beta users - this is what success looks like on our platform
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 px-4 sm:px-0">
           {caseStudies.map((study, index) => (
             <Card key={index} className="glass hover:glow transition-all duration-300">
               <CardHeader className="text-center">
@@ -146,7 +146,7 @@ const CaseStudiesSection = () => {
         </div>
 
         {/* Summary Stats */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-0">
           <Card className="glass text-center">
             <CardContent className="p-6">
               <Users className="h-8 w-8 text-primary mx-auto mb-2" />

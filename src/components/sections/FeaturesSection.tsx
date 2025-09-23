@@ -118,98 +118,189 @@ const FeaturesSection = () => {
   return (
     <section id="features" className="py-20">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-16 px-4 sm:px-0">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Features & Benefits 
             <span className="gradient-text"> by Role</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Tailored solutions for every type of user - from individual creators to large agencies
           </p>
         </div>
         
-        <div className="overflow-x-auto">
-          <div className="min-w-full">
-            {/* Table Header */}
-            <div className="grid grid-cols-4 gap-4 mb-6 p-4 glass rounded-lg">
-              <div className="font-bold text-lg">Feature</div>
-              <div>
-                <span className="font-bold text-lg text-center gradient-text">Regular</span>
-               <br />
-                <span className="text-xs text-muted-foreground max-w-3xl mx-auto">
-                  Any social media user can join for free and start monetizing their presence.
-                </span>
-              </div>
-              <div>
-                <span className="font-bold text-lg text-center gradient-text">Influencer</span>
-               <br />
-                <span className="text-xs text-muted-foreground max-w-3xl mx-auto">
-                  Creators with a dedicated following seeking advanced tools to engage and expand their reach.
-                </span>
-              </div>
-              <div>
-                <span className="font-bold text-lg text-center gradient-text">Agency</span>
-               <br />
-                <span className="text-xs text-muted-foreground max-w-3xl mx-auto">
-                  Businesses or teams managing multiple clients and campaigns across platforms.
-                </span>
+        {/* Desktop Table View */}
+        <div className="hidden lg:block">
+          <div className="overflow-x-auto">
+            <div className="min-w-full">
+              {/* Table Header */}
+              <div className="grid grid-cols-4 gap-4 mb-6 p-4 glass rounded-lg">
+                <div className="font-bold text-lg">Feature</div>
+                <div>
+                  <span className="font-bold text-lg text-center gradient-text">Regular</span>
+                 <br />
+                  <span className="text-xs text-muted-foreground max-w-3xl mx-auto">
+                    Any social media user can join for free and start monetizing their presence.
+                  </span>
+                </div>
+                <div>
+                  <span className="font-bold text-lg text-center gradient-text">Influencer</span>
+                 <br />
+                  <span className="text-xs text-muted-foreground max-w-3xl mx-auto">
+                    Creators with a dedicated following seeking advanced tools to engage and expand their reach.
+                  </span>
+                </div>
+                <div>
+                  <span className="font-bold text-lg text-center gradient-text">Agency</span>
+                 <br />
+                  <span className="text-xs text-muted-foreground max-w-3xl mx-auto">
+                    Businesses or teams managing multiple clients and campaigns across platforms.
+                  </span>
+                </div>
               </div>
               
-            </div>
-            
-            {/* Feature Rows */}
-            <Accordion type="multiple" className="space-y-4">
-              {featureTable.map((feature, index) => {
-                const Icon = feature.icon;
-                return (
-                  <AccordionItem key={index} value={`feature-${index}`} className="glass rounded-lg overflow-hidden">
-                    <AccordionTrigger className="p-4 hover:no-underline hover:bg-muted/20">
-                      <div className="grid grid-cols-4 gap-4 w-full items-center">
-                        <div className="flex items-center gap-3 text-left">
-                          <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
-                            <Icon className="h-5 w-5 text-primary" />
+              {/* Feature Rows */}
+              <Accordion type="multiple" className="space-y-4">
+                {featureTable.map((feature, index) => {
+                  const Icon = feature.icon;
+                  return (
+                    <AccordionItem key={index} value={`feature-${index}`} className="glass rounded-lg overflow-hidden">
+                      <AccordionTrigger className="p-4 hover:no-underline hover:bg-muted/20">
+                        <div className="grid grid-cols-4 gap-4 w-full items-center">
+                          <div className="flex items-center gap-3 text-left">
+                            <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
+                              <Icon className="h-5 w-5 text-primary" />
+                            </div>
+                            <span className="font-semibold">{feature.name}</span>
                           </div>
-                          <span className="font-semibold">{feature.name}</span>
+                          <div className="flex justify-center">
+                            {feature.regular.available ? (
+                              <Check className="h-5 w-5 text-green-400" />
+                            ) : (
+                              <X className="h-5 w-5 text-red-400" />
+                            )}
+                          </div>
+                          <div className="flex justify-center">
+                            {feature.influencer.available ? (
+                              <Check className="h-5 w-5 text-green-400" />
+                            ) : (
+                              <X className="h-5 w-5 text-red-400" />
+                            )}
+                          </div>
+                          <div className="flex justify-center">
+                            {feature.agency.available ? (
+                              <Check className="h-5 w-5 text-green-400" />
+                            ) : (
+                              <X className="h-5 w-5 text-red-400" />
+                            )}
+                          </div>
                         </div>
-                        <div className="flex justify-center">
-                          {feature.regular.available ? (
-                            <Check className="h-5 w-5 text-green-400" />
-                          ) : (
-                            <X className="h-5 w-5 text-red-400" />
-                          )}
+                      </AccordionTrigger>
+                      <AccordionContent className="p-4 pt-0">
+                        <div className="mt-4">
+                          <Card className="glass">
+                            <CardContent className="p-4">
+                              <CardDescription className="text-base">
+                                {feature.description}
+                              </CardDescription>
+                            </CardContent>
+                          </Card>
                         </div>
-                        <div className="flex justify-center">
-                          {feature.influencer.available ? (
-                            <Check className="h-5 w-5 text-green-400" />
-                          ) : (
-                            <X className="h-5 w-5 text-red-400" />
-                          )}
-                        </div>
-                        <div className="flex justify-center">
-                          {feature.agency.available ? (
-                            <Check className="h-5 w-5 text-green-400" />
-                          ) : (
-                            <X className="h-5 w-5 text-red-400" />
-                          )}
-                        </div>
-                      </div>
-                    </AccordionTrigger>
-                    <AccordionContent className="p-4 pt-0">
-                      <div className="mt-4">
-                        <Card className="glass">
-                          <CardContent className="p-4">
-                            <CardDescription className="text-base">
-                              {feature.description}
-                            </CardDescription>
-                          </CardContent>
-                        </Card>
-                      </div>
-                    </AccordionContent>
-                  </AccordionItem>
-                );
-              })}
-            </Accordion>
+                      </AccordionContent>
+                    </AccordionItem>
+                  );
+                })}
+              </Accordion>
+            </div>
           </div>
+        </div>
+
+        {/* Mobile Card View */}
+        <div className="lg:hidden px-4 sm:px-0">
+          {/* Role Descriptions */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+            <Card className="glass">
+              <CardContent className="p-4 text-center">
+                <h3 className="font-bold gradient-text mb-2">Regular</h3>
+                <p className="text-xs text-muted-foreground">
+                  Any social media user can join for free and start monetizing their presence.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="glass">
+              <CardContent className="p-4 text-center">
+                <h3 className="font-bold gradient-text mb-2">Influencer</h3>
+                <p className="text-xs text-muted-foreground">
+                  Creators with a dedicated following seeking advanced tools to engage and expand their reach.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="glass">
+              <CardContent className="p-4 text-center">
+                <h3 className="font-bold gradient-text mb-2">Agency</h3>
+                <p className="text-xs text-muted-foreground">
+                  Businesses or teams managing multiple clients and campaigns across platforms.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Mobile Feature Cards */}
+          <Accordion type="multiple" className="space-y-4">
+            {featureTable.map((feature, index) => {
+              const Icon = feature.icon;
+              return (
+                <AccordionItem key={index} value={`feature-${index}`} className="glass rounded-lg overflow-hidden">
+                  <AccordionTrigger className="p-4 hover:no-underline hover:bg-muted/20">
+                    <div className="flex items-center gap-3 w-full text-left">
+                      <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <div className="flex-1">
+                        <span className="font-semibold block">{feature.name}</span>
+                        <div className="flex items-center gap-4 mt-2">
+                          <div className="flex items-center gap-1">
+                            <span className="text-xs text-muted-foreground">Regular:</span>
+                            {feature.regular.available ? (
+                              <Check className="h-4 w-4 text-green-400" />
+                            ) : (
+                              <X className="h-4 w-4 text-red-400" />
+                            )}
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <span className="text-xs text-muted-foreground">Influencer:</span>
+                            {feature.influencer.available ? (
+                              <Check className="h-4 w-4 text-green-400" />
+                            ) : (
+                              <X className="h-4 w-4 text-red-400" />
+                            )}
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <span className="text-xs text-muted-foreground">Agency:</span>
+                            {feature.agency.available ? (
+                              <Check className="h-4 w-4 text-green-400" />
+                            ) : (
+                              <X className="h-4 w-4 text-red-400" />
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent className="p-4 pt-0">
+                    <div className="mt-4">
+                      <Card className="glass">
+                        <CardContent className="p-4">
+                          <CardDescription className="text-base leading-relaxed">
+                            {feature.description}
+                          </CardDescription>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              );
+            })}
+          </Accordion>
         </div>
       </div>
     </section>

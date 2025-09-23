@@ -6,17 +6,17 @@ const SurveySection = () => {
   return (
     <section id="survey" className="py-20">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-16 px-4 sm:px-0">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Join the 
             <span className="gradient-text"> Exclusive Waitlist</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Be among the first to revolutionize your social media presence. Limited early access spots available.
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto px-4 sm:px-0">
           <Card className="glass glow">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl mb-4">Early Access Application</CardTitle>
@@ -27,7 +27,7 @@ const SurveySection = () => {
             
             <CardContent className="space-y-8">
               {/* Benefits of joining */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                 <div className="text-center">
                   <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mx-auto mb-3">
                     <Star className="h-6 w-6 text-primary" />
@@ -61,9 +61,9 @@ const SurveySection = () => {
                   href="https://airtable.com/appHyeDelOzMp9CYK/pagIaOAtKsQVxTfdW/form" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-block"
+                  className="inline-block w-full sm:w-auto"
                 >
-                  <Button size="lg" className="glow hover:glow-intense transition-all duration-300 group">
+                  <Button size="lg" className="glow hover:glow-intense transition-all duration-300 group w-full sm:w-auto min-h-[48px]">
                     Join Waitlist
                     <ExternalLink className="ml-2 h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                   </Button>
