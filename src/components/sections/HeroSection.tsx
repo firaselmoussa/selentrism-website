@@ -38,8 +38,14 @@ const HeroSection = () => {
                   </Button>
             </a>
             
-            <a href="#about" className="w-full sm:w-auto">
+            <a href="/demo" className="w-full sm:w-auto">
               <Button variant="outline" size="lg" className="border-primary/50 hover:border-primary w-full sm:w-auto min-h-[48px]">
+                Try Demo
+              </Button>
+            </a>
+            
+            <a href="#about" className="w-full sm:w-auto">
+              <Button variant="ghost" size="lg" className="hover:bg-accent/20 w-full sm:w-auto min-h-[48px]">
                 Learn More
               </Button>
             </a>

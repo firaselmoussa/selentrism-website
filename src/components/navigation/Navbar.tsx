@@ -72,9 +72,11 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            {/* <Link to="/login">
-              <Button variant="ghost">Login</Button>
-            </Link> */}
+            <Link to="/demo">
+              <Button variant="outline" size="lg" className="border-primary/50 hover:border-primary">
+                Try Demo
+              </Button>
+            </Link>
             <a 
                   href="https://airtable.com/appHyeDelOzMp9CYK/pagIaOAtKsQVxTfdW/form" 
                   target="_blank" 
@@ -138,9 +140,9 @@ const Navbar = () => {
                 Contact
               </button>
               <div className="flex flex-col space-y-2 pt-4">
-                {/* <Link to="/login">
-                  <Button variant="ghost" className="w-full">Login</Button>
-                </Link> */}
+                <Link to="/demo">
+                  <Button variant="outline" className="w-full border-primary/50 hover:border-primary">Try Demo</Button>
+                </Link>
                 <button onClick={() => scrollToSection('survey')} className="w-full">
                   <Button className="w-full glow">Join Waitlist</Button>
                 </button>
