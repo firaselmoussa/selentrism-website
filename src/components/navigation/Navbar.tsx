@@ -77,6 +77,11 @@ const Navbar = () => {
                 Try Demo
               </Button>
             </Link>
+            <Link to="/mvp">
+              <Button variant="outline" size="lg" className="border-primary/50 hover:border-primary">
+                MVP
+              </Button>
+            </Link>
             <a 
                   href="https://airtable.com/appHyeDelOzMp9CYK/pagIaOAtKsQVxTfdW/form" 
                   target="_blank" 
@@ -142,6 +147,9 @@ const Navbar = () => {
               <div className="flex flex-col space-y-2 pt-4">
                 <Link to="/demo">
                   <Button variant="outline" className="w-full border-primary/50 hover:border-primary">Try Demo</Button>
+                </Link>
+                <Link to="/mvp">
+                  <Button variant="outline" className="w-full border-primary/50 hover:border-primary">MVP</Button>
                 </Link>
                 <button onClick={() => scrollToSection('survey')} className="w-full">
                   <Button className="w-full glow">Join Waitlist</Button>
