@@ -113,13 +113,16 @@ const Dashboard = () => {
     <div className="space-y-6">
       <div>
         <h2 className="text-3xl font-bold mb-2">Welcome back, {mockUser.name}</h2>
-        <p className="text-muted-foreground">Manage your social media presence and campaigns</p>
+        {/* <p className="text-muted-foreground">Manage your social media presence and campaigns</p> */}
       </div>
 
       <Card>
         <CardHeader>
-          <CardTitle>Connect Social Media Accounts</CardTitle>
-          <CardDescription>Grant permissions to manage your social media</CardDescription>
+          <CardTitle>Connect Social Media Accounts 
+            <span>    </span>
+            <button className="border-2 rounded transition-transform duration-200 hover:scale-110  border-gray-100 rounded px-1"> + </button>
+          </CardTitle>
+          {/* <CardDescription>Grant permissions to manage your social media</CardDescription> */}
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
