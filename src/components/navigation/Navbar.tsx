@@ -82,6 +82,11 @@ const Navbar = () => {
                 MVP
               </Button>
             </Link>
+            <Link to="/dashboard">
+              <Button variant="outline" size="lg" className="border-primary/50 hover:border-primary">
+                Dashboard
+              </Button>
+            </Link>
             <a 
                   href="https://airtable.com/appHyeDelOzMp9CYK/pagIaOAtKsQVxTfdW/form" 
                   target="_blank" 
@@ -150,6 +155,9 @@ const Navbar = () => {
                 </Link>
                 <Link to="/mvp">
                   <Button variant="outline" className="w-full border-primary/50 hover:border-primary">MVP</Button>
+                </Link>
+                <Link to="/dashboard">
+                  <Button variant="outline" className="w-full border-primary/50 hover:border-primary">Dashboard</Button>
                 </Link>
                 <button onClick={() => scrollToSection('survey')} className="w-full">
                   <Button className="w-full glow">Join Waitlist</Button>
