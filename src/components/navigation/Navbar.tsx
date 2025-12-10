@@ -72,19 +72,19 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link to="/demo">
+            {/* <Link to="/demo">
               <Button variant="outline" size="lg" className="border-primary/50 hover:border-primary">
                 Try Demo
               </Button>
-            </Link>
-            <Link to="/mvp">
+            </Link> */}
+            {/* <Link to="/mvp">
               <Button variant="outline" size="lg" className="border-primary/50 hover:border-primary">
                 MVP
               </Button>
-            </Link>
+            </Link> */}
             <Link to="/dashboard">
               <Button variant="outline" size="lg" className="border-primary/50 hover:border-primary">
-                Dashboard
+                Demo
               </Button>
             </Link>
             <a 
